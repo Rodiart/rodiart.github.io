@@ -1,2 +1,2 @@
-# rotiart.github.io
-Rotiart's website
+# rodiart.github.io
+Rodiart's website
