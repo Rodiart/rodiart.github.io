@@ -1,2 +1,2 @@
-# rodiart.github.io
+# rodiart.com
 Rodiart's website
