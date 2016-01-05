@@ -4,56 +4,53 @@
 @import 'libs/skel';
 
 /*
-	Fractal by HTML5 UP
+	Landed by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Spotlight */
+/* Loader */
 
-	.spotlight {
-		.image {
-			width: 25%;
-			display: inline-block;
-			vertical-align: middle;
+	body.landing {
+		&:before, &:after {
+			display: none !important;
+		}
+	}
+
+/* Icon */
+
+	.icon {
+		&.alt {
+			color: inherit !important;
 		}
 
-		.content {
-			width: 65%;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-
-		&:nth-child(2n) {
-			.image {
-				margin: 0 (_size(element-margin) * 1.5) 0 0;
-			}
-
-			.content {
-				text-align: left;
+		&.major {
+			&.alt {
+				&:before {
+					color: _palette(fg-bold) !important;
+				}
 			}
 		}
 	}
 
-/* Header */
+/* Banner */
 
-	#header {
-		height: auto;
-		text-align: center;
-
-		.content {
-			display: inline-block;
-			vertical-align: middle;
+	#banner {
+		&:after {
+			background-color: _palette(bg-transparent);
 		}
+	}
 
-		.image {
-			display: inline-block;
-			vertical-align: middle;
+/* Footer */
+
+	#footer {
+		.icons {
+			.icon {
+				&.alt {
+					&:before {
+						color: _palette(fg-bold) !important;
+					}
+				}
+			}
 		}
 	}
