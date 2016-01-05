@@ -2133,7 +2133,7 @@
 	}
 
 		header.major:after {
-			background: #e44c65;
+			background: #1da8f0;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2964,7 +2964,7 @@
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: #3F51B5;
+			background: rgba(77, 111, 128, 0.95);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3332,7 +3332,7 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #3F51B5;
+		background-color: rgba(77, 111, 128, 0.95);
 		background-image: url("/images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
@@ -3352,10 +3352,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			/*background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;*/
 			content: '';
 			display: block;
 			height: 100%;
