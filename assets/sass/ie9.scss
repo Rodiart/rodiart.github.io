@@ -4,53 +4,110 @@
 @import 'libs/skel';
 
 /*
-	Landed by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Loader */
+/* Type */
 
-	body.landing {
-		&:before, &:after {
-			display: none !important;
-		}
-	}
-
-/* Icon */
-
-	.icon {
-		&.alt {
-			color: inherit !important;
-		}
-
+	h1 {
 		&.major {
-			&.alt {
-				&:before {
-					color: _palette(fg-bold) !important;
-				}
+			&:after {
+				background: _palette(accent3);
 			}
 		}
 	}
 
-/* Banner */
+/* Wrapper */
 
-	#banner {
+	.wrapper {
+		&.fullscreen {
+			min-height: 0;
+			padding-bottom: 6em;
+			padding-top: 6em;
+
+			body.is-ie & {
+				height: auto;
+			}
+		}
+	}
+
+/* Spotlights */
+
+	.spotlights {
+		> section {
+			padding-left: 20em;
+			position: relative;
+
+			> .image {
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 20em;
+			}
+
+			> .content {
+				width: 100%;
+			}
+		}
+	}
+
+/* Features */
+
+	.features {
 		&:after {
-			background-color: _palette(bg-transparent);
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		section {
+			float: left;
 		}
 	}
 
-/* Footer */
+/* Split */
 
-	#footer {
-		.icons {
-			.icon {
-				&.alt {
-					&:before {
-						color: _palette(fg-bold) !important;
-					}
+	.split {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> * {
+			float: left;
+		}
+	}
+
+/* Sidebar */
+
+	#sidebar {
+		nav {
+			a {
+				&:after {
+					background-color: _palette(accent3);
 				}
 			}
+		}
+	}
+
+/* Header */
+
+	#header {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> .title {
+			float: left;
+		}
+
+		> nav {
+			float: right;
 		}
 	}
